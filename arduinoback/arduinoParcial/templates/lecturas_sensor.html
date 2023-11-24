@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lecturas del Sensor</title>
+</head>
+<body>
+    <h1>Lecturas del Sensor</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Tiempo</th>
+                <th>Valor del Sensor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for lectura in lecturas %}
+                <tr>
+                    <td>{{ lectura.tiempo }}</td>
+                    <td>{{ lectura.valor_sensor }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
